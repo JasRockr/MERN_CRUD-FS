@@ -1,0 +1,31 @@
+{
+  "name": "mern_crud-fs",
+  "version": "1.0.0",
+  "description": "project api elecciones - backend & frontend",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "server": "nodemon server/index",
+    "client": "npm run dev --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "start": "node server/index"
+  },
+  "keywords": [],
+  "author": "Json Rivera @jasrockr",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "jsonwebtoken": "^9.0.1",
+    "mongoose": "^7.3.4",
+    "morgan": "^1.10.0",
+    "zod": "^3.21.4"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.0",
+    "nodemon": "^3.0.1"
+  }
+}
